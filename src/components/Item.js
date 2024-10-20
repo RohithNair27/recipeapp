@@ -24,21 +24,25 @@ const Item = ({ item, updateItem, deleteItem }) => {
           <input
             className="border p-2 mb-2 w-full"
             value={updatedFoodName}
+            placeholder="Food Name"
             onChange={(e) => setUpdatedFoodName(e.target.value)}
           />
           <input
             className="border p-2 mb-2 w-full"
             value={updatedIngredients}
+            placeholder="Ingredients"
             onChange={(e) => setUpdatedIngredients(e.target.value)}
           />
           <input
             className="border p-2 mb-2 w-full"
             value={updatedProcess}
+            placeholder="Making"
             onChange={(e) => setUpdatedProcess(e.target.value)}
           />
           <input
             className="border p-2 mb-2 w-full"
             value={updatedImage}
+            placeholder="Image URL"
             onChange={(e) => setUpdatedImage(e.target.value)}
           />
           <button
