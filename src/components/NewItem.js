@@ -51,7 +51,6 @@ function NewItem({ addItem }) {
               setFoodName(e.target.value);
               if (errors.foodName) setErrors((prev) => ({ ...prev, foodName: '' }));
             }}
-            required
           />
           {errors.foodName && <span className="text-red-500">{errors.foodName}</span>}
         </div>
@@ -65,7 +64,6 @@ function NewItem({ addItem }) {
               setIngredients(e.target.value);
               if (errors.ingredients) setErrors((prev) => ({ ...prev, ingredients: '' }));
             }}
-            required
           />
           {errors.ingredients && <span className="text-red-500">{errors.ingredients}</span>}
         </div>
@@ -79,7 +77,6 @@ function NewItem({ addItem }) {
               setProcess(e.target.value);
               if (errors.process) setErrors((prev) => ({ ...prev, process: '' }));
             }}
-            required
           />
           {errors.process && <span className="text-red-500">{errors.process}</span>}
         </div>
@@ -93,7 +90,6 @@ function NewItem({ addItem }) {
               setImageURL(e.target.value);
               if (errors.imageurl) setErrors((prev) => ({ ...prev, imageurl: '' }));
             }}
-            required
           />
           {errors.imageurl && <span className="text-red-500">{errors.imageurl}</span>}
         </div>
